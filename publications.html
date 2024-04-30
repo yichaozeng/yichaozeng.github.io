@@ -240,7 +240,7 @@ _W.setup_model_rpc({"rpc_namespace":"_W.CustomerAccounts.RPC","model_namespace":
 	</div>
 
   <div class="nav mobile-nav"><ul class="wsite-menu-default">
-		<li id="pg851223218789475656" class="wsite-menu-item-wrap">
+		<li id="active" class="wsite-menu-item-wrap">
 			<a
 						href="index.html"
 				class="wsite-menu-item"
@@ -258,7 +258,7 @@ _W.setup_model_rpc({"rpc_namespace":"_W.CustomerAccounts.RPC","model_namespace":
 			</a>
 			
 		</li>
-		<li id="active" class="wsite-menu-item-wrap">
+		<li id="pg675861459398486040" class="wsite-menu-item-wrap">
 			<a
 						href="publications.html"
 				class="wsite-menu-item"
@@ -284,62 +284,6 @@ _W.setup_model_rpc({"rpc_namespace":"_W.CustomerAccounts.RPC","model_namespace":
     <div id="customer-accounts-app"></div>
     <script src="http://cdn2.editmysite.com/js/site/main-customer-accounts-site.js?buildTime=1234"></script>
 
-		<div id="fb-root"></div>
-<script>
-	window.fbAsyncInit = function() {
-		FB.init({
-			appId : '190291501407',
-			xfbml : true,
-			version : 'v2.6'
-		});
-
-        // Set Facebook comment plugin's colorscheme based off of theme
-		var comments = document.getElementsByClassName('facebook-comment-widget'),
-			scheme = document.body.className.match('wsite-theme-light');
-
-		for (var i = 0; i < comments.length; i++) {
-			comments[i].setAttribute('colorscheme', scheme ? 'light' : 'dark');
-		}
-
-		var fbCommentCounts;
-
-		FB.Event.subscribe('xfbml.render', function(){
-			fbCommentCounts = jQuery('.fb_comments_count');
-			for (var i = 0; i < fbCommentCounts.length; i++) {
-				var commentText = (jQuery(fbCommentCounts[i]).text() == '1' ? "Comment" : "Comments");
-				jQuery(fbCommentCounts[i]).parent().siblings('.fb_comment_count_label').text(commentText);
-			}
-		});
-
-		var comment_callback = function(res) {
-			FB.XFBML.parse(); // Refresh comment counters on page
-		}
-
-		FB.Event.subscribe('comment.create', comment_callback);
-		FB.Event.subscribe('comment.remove', comment_callback);
-
-	};
-
-	(function(d, s, id){
-		var js, fjs = d.getElementsByTagName(s)[0];
-		if (d.getElementById(id)) {return;}
-		js = d.createElement(s); js.id = id;
-		js.src = "//connect.facebook.net/"+_W.facebookLocale+"/sdk.js";
-		fjs.parentNode.insertBefore(js, fjs);
-	}(document, 'script', 'facebook-jssdk'));
-</script>
-<script type='text/javascript'>
-	(function() {
-		function j(src, id) {
-			var s = document.createElement('script');
-			s.type = 'text/javascript';
-			s.async = true;
-			s.src = src;
-			if(id) {s.id=id};
-			document.getElementsByTagName('head')[0].appendChild(s);
-		}
-		j('//platform.twi'+'tter.com/widgets.js');
-	})()
-</script>
+		
 	</body>
 </html>
