@@ -1,86 +1,57 @@
-<!DOCTYPE html>
-<html>
+<!DOCTYPE  html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
 <head>
-    <title>Navigation Bar with Tabs</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+    <title>YICHAO ZENG 曾逸超 - Home</title>
     <style>
-        /* Basic styling for the navigation bar */
-        .navbar {
-            overflow: hidden;
-            text-align: center; /* Align the navigation bar to the center */
+        body {
+            font-family: Arial, sans-serif; color: #333;
+        }
+        /* Styling for unvisited links */
+        a:link {
+            color: #808080; /* Set the color for unvisited links */
+            text-decoration: none; /* Remove underline */
         }
 
-        /* Style the links inside the navigation bar */
-        .navbar a {
-            display: inline-block; /* Display the links inline */
-            color: black; /* Set the default color for tab names */
-            text-align: center;
-            padding: 14px 20px;
-            text-decoration: none;
-            font-size: 17px;
+        /* Styling for visited links */
+        a:visited {
+            color: #808080; /* Set the color for visited links */
         }
 
-        /* Change the text color of the active/current link */
-        .navbar a.active {
-            color: red; /* Set the color for the active tab name */
+        /* Styling for hovered links */
+        a:hover {
+            color: #000; /* Set the color for links on hover */
         }
 
-        /* Style the tab content */
-        .tabcontent {
-            display: none;
-            padding: 20px;
-            border: 1px solid #ccc;
-        }
     </style>
 </head>
 <body>
-    <div class="navbar">
-        <a href="#" class="tablink" onclick="openTab(event, 'HOME')">Tab 1</a>
-        <a href="#" class="tablink" onclick="openTab(event, 'BIO')">Tab 2</a>
-        <a href="#" class="tablink" onclick="openTab(event, 'PUBLICATIONS')">Tab 3</a>
-        <a href="#" class="tablink" onclick="openTab(event, 'CONTACT')">Tab 4</a>
-    </div>
-
-    <div id="Tab1" class="tabcontent">
-        <h3>Tab 1 Content</h3>
-        <p>This is the content of Tab 1.</p>
-    </div>
-
-    <div id="Tab2" class="tabcontent">
-        <h3>Tab 2 Content</h3>
-        <p>This is the content of Tab 2.</p>
-    </div>
-
-    <div id="Tab3" class="tabcontent">
-        <h3>Tab 3 Content</h3>
-        <p>This is the content of Tab 3.</p>
-    </div>
-
-    <div id="Tab4" class="tabcontent">
-        <h3>Tab 4 Content</h3>
-        <p>This is the content of Tab 4.</p>
-    </div>
-
-    <script>
-        // Function to open a specific tab content
-        function openTab(evt, tabName) {
-            // Hide all tab content
-            var tabcontent = document.getElementsByClassName("tabcontent");
-            for (var i = 0; i < tabcontent.length; i++) {
-                tabcontent[i].style.display = "none";
-            }
-
-            // Remove 'active' class from all tab links
-            var tablinks = document.getElementsByClassName("tablink");
-            for (i = 0; i < tablinks.length; i++) {
-                tablinks[i].classList.remove("active");
-            }
-
-            // Show the specific tab content
-            document.getElementById(tabName).style.display = "block";
-
-            // Add 'active' class to the clicked tab link
-            evt.currentTarget.classList.add("active");
-        }
-    </script>
+  
+<p style="font-size: 22px;text-indent: 0pt;line-height: 39pt;text-align: center;">
+  <b>
+      <span style="font-family: 'Times New Roman', Times, serif; color: #000; letter-spacing: 2px;">
+          YICHAO ZENG  曾逸超
+      </span>
+  </b>
+</p>
+<p style="padding-top: 5pt;font-size: 12px;text-indent: 0pt;text-align: center;">
+    <span style="font-family: 'Times New Roman', Times, serif; letter-spacing: 2px;">
+      <a href="https://yichaozeng.github.io/index_simp.html" class="s2" style="margin: 0 20px;">HOME    </a>
+      <a href="https://yichaozeng.github.io/bio_simp.html" class="a" style="margin: 0 20px;">BIO    </a>
+      <a href="https://yichaozeng.github.io/publications_simp.html" class="a" style="margin: 0 20px;">PUBLICATIONS    </a>
+      <a href="https://yichaozeng.github.io/contact_simp.html" style="margin: 0 20px;">CONTACT</a>
+    </span>
+</p>
+<p style="padding-top: 10pt;text-indent: 0pt;text-align: center;">
+  <span><img alt="image" src="uploads/1/2/3/7/123795736/screenshot-2023-11-25-at-8-54-23-pm_orig.png" style="width: 30%; height: auto;"></span>
+</p>
+<p style="padding-top: 0pt;text-indent: 0pt;line-height: 149%;text-align: center;">Me and my pet, an African fat-tailed gecko.<br>Pencil drawing, July 20, 2023. ©Yichao Zeng</p>
+<p style="padding-top: 0pt;text-indent: 0pt;text-align: center;"><br/></p>
+<h2 style="padding-left: 0pt;text-indent: 0pt;text-align: center;">Welcome!</h2>
+<p style="padding-top: 0pt;text-indent: 0pt;text-align: center;"><br/></p>
+<p style="text-indent: 0pt;text-align: center;">
+  
+</p>
+<p class="s5" style="padding-left: 0pt;text-indent: 0pt;text-align: center;">©2024 Yichao Zeng</p>
 </body>
 </html>
