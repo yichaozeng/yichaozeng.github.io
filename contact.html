@@ -33,6 +33,12 @@
             padding: 0 20px; /* Add padding for better readability and aesthetics */
         }
 
+	/* Style for the container */
+        .container {
+            display: flex; /* Use flexbox for layout */
+            align-items: center; /* Center items vertically */
+        }
+
         /* Optional: Adjust styles for mobile devices */
         @media (max-width: 600px) {
             p {
@@ -63,17 +69,25 @@
 <p style="padding-top: 20pt;font-size: 22px;text-indent: 0pt;line-height: 100%;text-align: left;">
 	Contact
 </p>
-<p style="padding-top: 20pt;">
-	<font size="5">
-		<a href="mailto:yichaozeng@email.arizona.edu">Email</a><br />
-		<a href="https://twitter.com/yichaozeng44" target="_blank">Twitter</a><br />
-		<a href="https://scholar.google.com/citations?user=QFMHq7YAAAAJ&amp;hl=en" target="_blank">Google Scholar</a><br />
-		<a href="https://www.researchgate.net/profile/Yichao_Zeng" target="_blank">ResearchGate</a><br />
-		<a href="https://github.com/yichaozeng" target="_blank">GitHub</a><br />
-		<a href="https://www.instagram.com/yichaoz44/" target="_blank">Instagram</a><br />
-		WeChat &#24494;&#20449;&#8203 (QR code);<br />
-	</font>
-</p>
+	
+<div class="container">
+	<p style="padding-top: 20pt;flex: 1;" /* Allow the paragraph to grow to fill available space */>
+		<font size="5">
+			<a href="mailto:yichaozeng@email.arizona.edu">Email</a><br />
+			<a href="https://twitter.com/yichaozeng44" target="_blank">Twitter</a><br />
+			<a href="https://scholar.google.com/citations?user=QFMHq7YAAAAJ&amp;hl=en" target="_blank">Google Scholar</a><br />
+			<a href="https://www.researchgate.net/profile/Yichao_Zeng" target="_blank">ResearchGate</a><br />
+			<a href="https://github.com/yichaozeng" target="_blank">GitHub</a><br />
+			<a href="https://www.instagram.com/yichaoz44/" target="_blank">Instagram</a><br />
+			WeChat &#24494;&#20449;&#8203 (QR code);<br />
+		</font>
+	</p>
+	<img src="uploads/1/2/3/7/123795736/20201117183307_orig.jpg" alt="Image Description" style="
+		margin-left: 20px; /* Add space between the paragraph and the image */
+            	max-width: 100%; /* Ensure the image does not exceed its container's width */
+            	height: auto; /* Maintain aspect ratio */
+		">
+</div>
 
 </p>
 <p class="s5" style="padding-left: 0pt;text-indent: 0pt;text-align: center;"><br><br>©2024 Yichao Zeng</p>
