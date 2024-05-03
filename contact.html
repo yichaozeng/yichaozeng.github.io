@@ -35,14 +35,14 @@
 
 	/* Style for the container */
         .container {
-	    width: 80%; /* Set the width to 80% of the viewport width */
+            width: 80%; /* Set the width to 80% of the viewport width */
             max-width: 800px; /* Set a maximum width to avoid excessive stretching on large screens */
-            margin: 20 auto; /* Center the paragraph horizontally */
+            margin: 20px auto; /* Center the container and align with the "Contact" paragraph */
             font-size: 16px; /* Set a base font size for readability */
+            line-height: 1.5; /* Set line height for better readability */
             padding: 0 20px; /* Add padding for better readability and aesthetics */
-            
-	    display: inline-flex; /*Use inline-flex to fit the container to its contents */
-            align-items: center; /* Center items vertically */
+            display: flex; /* Use flexbox to arrange children */
+            align-items: flex-start; /* Align items to the start (top) of the container */
         }
 
         /* Optional: Adjust styles for mobile devices */
@@ -77,22 +77,20 @@
 </p>
 	
 <div class="container">
-	<p style="padding-top: 20pt;">
-		<font size="5">
-			<a href="mailto:yichaozeng@email.arizona.edu">Email</a><br />
-			<a href="https://twitter.com/yichaozeng44" target="_blank">Twitter</a><br />
-			<a href="https://scholar.google.com/citations?user=QFMHq7YAAAAJ&amp;hl=en" target="_blank">Google Scholar</a><br />
-			<a href="https://www.researchgate.net/profile/Yichao_Zeng" target="_blank">ResearchGate</a><br />
-			<a href="https://github.com/yichaozeng" target="_blank">GitHub</a><br />
-			<a href="https://www.instagram.com/yichaoz44/" target="_blank">Instagram</a><br />
-			<font color="#808080"> WeChat &#24494;&#20449;&#8203 (QR code)</font><br />
-		</font>
-	</p>
-	<img src="uploads/1/2/3/7/123795736/20201117183307_orig.jpg" alt="Image Description" style="
-		margin-left: 20px; /* Add space between the paragraph and the image */
-            	max-width: 30%; /* Ensure the image does not exceed its container's width */
-            	height: auto; /* Maintain aspect ratio */
-		">
+    <div class="text-image-container">
+        <p style="padding-top: 20pt;">
+            <font size="5">
+                <a href="mailto:yichaozeng@email.arizona.edu">Email</a><br />
+                <a href="https://twitter.com/yichaozeng44" target="_blank">Twitter</a><br />
+                <a href="https://scholar.google.com/citations?user=QFMHq7YAAAAJ&amp;hl=en" target="_blank">Google Scholar</a><br />
+                <a href="https://www.researchgate.net/profile/Yichao_Zeng" target="_blank">ResearchGate</a><br />
+                <a href="https://github.com/yichaozeng" target="_blank">GitHub</a><br />
+                <a href="https://www.instagram.com/yichaoz44/" target="_blank">Instagram</a><br />
+                WeChat &#24494;&#20449;&#8203 (QR code)<br />
+            </font>
+        </p>
+        <img src="uploads/1/2/3/7/123795736/20201117183307_orig.jpg" alt="Image Description">
+    </div>
 </div>
 
 </p>
